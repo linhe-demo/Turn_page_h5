@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>圣诞快乐！</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/animations.css"/>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+</head>
+<body>
+<audio id="musicfx" class="audio" loop="loop" autoplay="">
+    <source src="audio/main.mp3" type="audio/mp3">
+</audio>
+
+<div class="main">
+    <div id="div_music" class="music_logo" onclick="musicClick()"></div>
+    <div id="page-num">1页/共8页</div>
+    <div class="page page-1-1 page-current snow">
+        <div class="wrap">
+            <div class="img-text pt-page-fadeIn1s1s">采菊东篱下，悠然见南山</div>
+            <img class="img_1 pt-page-fadeIn1s1s" src="./img/1.jpg"/>
+            <div class="load-container">
+                <div class="loading-spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+                资源加载中，请稍后
+            </div>
+            <img class="next_arrow pt-page-moveFromBottomFade" src="img/icon_up.png"/>
+        </div>
+    </div>
+    <div class="page page-2-1 hide snow">
+        <div class="wrap">
+            <div class="img-text pt-page-fadeIn1s1s">暗暗淡淡紫，融融冶冶黄</div>
+            <img class="img_1 pt-page-fadeIn1s1s" src="./img/2.jpg"/>
+            <img class="next_arrow hide pt-page-moveIconUp" src="img/icon_up.png"/>
+        </div>
+    </div>
+
+    <div class="page page-3-1 hide snow">
+        <div class="wrap">
+            <div class="img-text pt-page-fadeIn1s1s">携壶酌流霞，搴菊泛寒荣</div>
+            <img class="img_1 pt-page-fadeIn1s1s" src="./img/3.jpg"/>
+            <img class="next_arrow hide pt-page-moveIconUp" src="img/icon_up.png"/>
+        </div>
+    </div>
+    <div class="page page-4-1 hide snow">
+        <div class="wrap">
+            <div class="img-text pt-page-fadeIn1s1s">五月天山雪，天花只有寒</div>
+            <img class="img_1 pt-page-fadeIn1s1s" src="./img/4.jpg"/>
+            <img class="next_arrow hide pt-page-moveIconUp" src="img/icon_up.png"/>
+        </div>
+    </div>
+    <div class="page page-5-1 hide snow">
+        <div class="wrap">
+            <div class="img-text pt-page-fadeIn1s1s">大雪压青松，青松挺且直</div>
+            <img class="img_1 pt-page-fadeIn1s1s" src="./img/5.jpg"/>
+            <img class="next_arrow hide pt-page-moveIconUp" src="img/icon_up.png"/>
+        </div>
+    </div>
+    <div class="page page-6-1 hide snow">
+        <div class="wrap">
+            <div class="img-text2 pt-page-fadeIn1s1s">孤帆远影碧空尽，唯见长江天际流</div>
+            <img class="img_1 pt-page-fadeIn1s1s" src="./img/6.jpg"/>
+            <img class="next_arrow hide pt-page-moveIconUp" src="img/icon_up.png"/>
+        </div>
+    </div>
+    <div class="page page-7-1 hide snow">
+        <div class="wrap">
+            <div class="img-text pt-page-fadeIn1s1s">星垂平野阔，月涌大江流</div>
+            <img class="img_1 pt-page-fadeIn1s1s" src="./img/7.jpg"/>
+            <img class="next_arrow hide pt-page-moveIconUp" src="img/icon_up.png"/>
+        </div>
+    </div>
+    <div class="page page-8-1 hide snow">
+        <div class="wrap">
+            <div class="img-text2 pt-page-fadeIn1s1s">若是夕阳无限好，何须惆怅近黄昏</div>
+            <img class="img_1 pt-page-fadeIn1s1s" src="./img/8.jpg"/>
+            <img class="next_arrow hide pt-page-moveIconUp" src="img/icon_up.png"/>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.swipe.js"></script>
+<script src="js/html2canvas.js"></script>
+<script src="js/canvas2image.js"></script>
+<script src="js/snow.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(".page-current").geneEffect();
+</script>
+</body>
+</html>
